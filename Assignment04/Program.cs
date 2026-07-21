@@ -19,6 +19,14 @@
              The parent method must be virtual - the same method but different implementation  
              */
             #endregion
+            #region Q03
+            /*
+             The keyword in parent class must be (virtual) to allow to overriding it in child class with keyword (override) 
+             to provide a new implementation for the method
+            Virtual : Mean Declares a method in the parent class that can be overridden 
+            Override : Replaces the parent's virtual method with a new implementation in the child class 
+             */
+            #endregion
             #endregion
         }
     }
