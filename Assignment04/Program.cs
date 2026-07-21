@@ -28,6 +28,25 @@
              */
             #endregion
             #endregion
+            #region Part 02
+            Cinema cinema = new Cinema("Cinema");
+            cinema.OpenCinema();
+            Console.WriteLine("==========SetPriceTest=========");
+            Ticket ticket=new Ticket("inception",50);
+            ticket.SetPrice(50);
+            ticket.SetPrice(5, 10);
+            Console.WriteLine("==========AllTickets=========");
+            StandardTicket ticket1 = new StandardTicket("Avengers", 200, "A5");
+            cinema.Add(ticket1);
+            VipTicket ticket2 = new VipTicket("Spiderman", 300, true, 50);
+            cinema.Add(ticket2);
+            IMAXTicket ticket3 = new IMAXTicket("Batman", 350, true);
+            cinema.Add(ticket3);
+            cinema.PrintAllTickets();
+            Console.WriteLine("==========Process Single Ticket=========");
+            Cinema.ProcessTicket(ticket2);
+            cinema.CloseCinema();
+            #endregion
         }
     }
 }
